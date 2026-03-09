@@ -17,6 +17,7 @@ let happiness = 70;
 const feed = () => {
   if (hunger < 10) {
     console.log(`${petName} is full and refuses to eat`);
+    return;
   }
   hunger -= 20;
   energy += 10;
@@ -24,6 +25,7 @@ const feed = () => {
 const play = () => {
   if (energy < 20) {
     console.log(`${petName} is too tired to play right now`);
+    return;
   }
   energy -= 5;
   hunger += 10;
